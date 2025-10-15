@@ -7,14 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "start": "node ./dist/index.js",
-    "dev" : "ts-node ./src/index.ts"
+    "dev" : "tsx ./src/index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^24.7.2",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
-  }
+    "typescript": "^5.9.3",
+    "tsx": "^4.20.6"
+  },
+  "dependencies": {
+    "fastify": "^5.6.1"
+  },
+  "type": "module"
 }
